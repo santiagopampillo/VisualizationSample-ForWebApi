@@ -2,6 +2,8 @@
 
 ### Description
 
+This samples shows you how to explore the different styles available to help you analyze and visualize your data.
+
 ![Screenshot](https://github.com/ThinkGeo/VisualizationSample-ForWebApi/blob/master/ScreenShot.png)
 
 ### Requirements
