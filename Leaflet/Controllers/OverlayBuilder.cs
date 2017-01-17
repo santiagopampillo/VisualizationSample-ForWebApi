@@ -21,7 +21,7 @@ namespace Visualization
         public static LayerOverlay GetOverlayWithClassBreakStyle()
         {
             // Get the file path name from its relative path.
-            string shpFilePathName = GetFullPath(@"app_data\usStatesCensus2010.shp");
+			string shpFilePathName = GetFullPath("App_Data/usStatesCensus2010.shp");
 
             ShapeFileFeatureLayer shapeFileFeatureLayer = new ShapeFileFeatureLayer(shpFilePathName);
             shapeFileFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
@@ -42,7 +42,7 @@ namespace Visualization
         public static LayerOverlay GetOverlayWithClusterPointStyle()
         {
             // Get the file path name from its relative path.
-            string shpFilePathName = GetFullPath(@"app_data\usEarthquake.shp");
+			string shpFilePathName = GetFullPath("App_Data/usEarthquake.shp");
 
             ShapeFileFeatureLayer shapeFileFeatureLayer = new ShapeFileFeatureLayer(shpFilePathName);
             shapeFileFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
@@ -81,7 +81,7 @@ namespace Visualization
         public static LayerOverlay GetOverlayWithDotDensityStyle()
         {
             // Get the file path name from its relative path.
-            string shpFilePathName = GetFullPath(@"app_data\usStatesCensus2010.shp");
+			string shpFilePathName = GetFullPath("App_Data/usStatesCensus2010.shp");
 
             ShapeFileFeatureLayer shapeFileFeatureLayer = new ShapeFileFeatureLayer(shpFilePathName);
             shapeFileFeatureLayer.ZoomLevelSet.ZoomLevel01.CustomStyles.Add(AreaStyles.CreateSimpleAreaStyle(GeoColor.FromArgb(20, GeoColor.FromHtml("#00e6fe")), GeoColor.StandardColors.Gray));
@@ -116,7 +116,7 @@ namespace Visualization
         public static LayerOverlay GetOverlayWithFilterStyle()
         {
             // Get the file path name from its relative path.
-            string shpFilePathName = GetFullPath(@"app_data\usStatesCensus2010.shp");
+			string shpFilePathName = GetFullPath(@"App_Data/usStatesCensus2010.shp");
 
             ShapeFileFeatureLayer shapeFileFeatureLayer = new ShapeFileFeatureLayer(shpFilePathName);
             shapeFileFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
@@ -140,7 +140,7 @@ namespace Visualization
         public static LayerOverlay GetOverlayWithHeatStyle()
         {
             // Get the file path name from its relative path.
-            string shpFilePathName = GetFullPath(@"app_data\usEarthquake.shp");
+			string shpFilePathName = GetFullPath("App_Data/usEarthquake.shp");
 
             ShapeFileFeatureLayer shapeFileFeatureLayer = new ShapeFileFeatureLayer(shpFilePathName);
             shapeFileFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
@@ -161,7 +161,7 @@ namespace Visualization
         public static LayerOverlay GetOverlayWithIconStyle()
         {
             // Get the file path name from its relative path.
-            string shpFilePathName = GetFullPath(@"app_data\Vehicles.shp");
+			string shpFilePathName = GetFullPath("App_Data/Vehicles.shp");
 
             ShapeFileFeatureLayer shapeFileFeatureLayer = new ShapeFileFeatureLayer(shpFilePathName);
             shapeFileFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
@@ -181,7 +181,7 @@ namespace Visualization
         public static LayerOverlay GetOverlayWithZedGraphStyle()
         {
             // Get the file path name from its relative path.
-            string shpFilePathName = GetFullPath(@"app_data\MajorCities.shp");
+			string shpFilePathName = GetFullPath(@"App_Data/MajorCities.shp");
 
             ShapeFileFeatureLayer shapeFileFeatureLayer = new ShapeFileFeatureLayer(shpFilePathName);
             shapeFileFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
@@ -374,7 +374,7 @@ namespace Visualization
             };
 
             // Get the file path name from its relative path.
-            string shpFilePathName = GetFullPath(@"app_data\usEarthquake.shp");
+			string shpFilePathName = GetFullPath("App_Data/usEarthquake.shp");
 
             // Create the layer for IsoLine.
             ShapeFileFeatureSource featureSource = new ShapeFileFeatureSource(shpFilePathName);
@@ -437,7 +437,7 @@ namespace Visualization
         private static ValueStyle GetIconStyle()
         {
             // Get the file path name from its relative path.
-            string imagePath = GetFullPath(@"Images\vehicle");
+            string imagePath = GetFullPath(@"Images/vehicle");
 
             ValueStyle valueStyle = new ValueStyle() { ColumnName = "TYPE" };
             // Create the icon style for different type of vehicles.

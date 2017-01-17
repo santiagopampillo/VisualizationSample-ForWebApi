@@ -109,39 +109,39 @@
     }
 
     #style-options #HeatStyle {
-        background-image: url(../images/heatmapstyle.png);
+        background-image: url(../Images/heatmapstyle.png);
     }
 
     #style-options #ClassBreakStyle {
-        background-image: url(../images/classbreakstyle.png);
+        background-image: url(../Images/classbreakstyle.png);
     }
 
     #style-options #DotDensityStyle {
-        background-image: url(../images/dotdensitystyle.PNG);
+        background-image: url(../Images/dotdensitystyle.png);
     }
 
     #style-options #IsolineStyle {
-        background-image: url(../images/isolinestyle.png);
+        background-image: url(../Images/isolinestyle.png);
     }
 
     #style-options #FilterStyle {
-        background-image: url(../images/valueStyle.PNG);
+        background-image: url(../Images/valueStyle.png);
     }
 
     #style-options #ClusterStyle {
-        background-image: url(../images/clusterstyle.png);
+        background-image: url(../Images/clusterstyle.png);
     }
 
     #style-options #ZedGraphStyle {
-        background-image: url(../images/zedgraphstyle.png);
+        background-image: url(../Images/zedgraphstyle.png);
     }
 
     #style-options #IconStyle {
-        background-image: url(../images/iconstyle.png);
+        background-image: url(../Images/iconstyle.png);
     }
 
     #style-options #CustomStyle {
-        background-image: url(../images/customstyle.png);
+        background-image: url(../Images/customstyle.png);
     }
 
 /*edit panel*/
