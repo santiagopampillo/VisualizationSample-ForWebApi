@@ -4,7 +4,7 @@
 
 This sample shows you how to explore the different styles available to help you analyze and visualize your data.
 
-Please refer to [Wiki](System.String[]) for the details.
+Please refer to [Wiki](http://wiki.thinkgeo.com/wiki/map_suite_web_for_webapi) for the details.
 
 ![Screenshot](https://github.com/ThinkGeo/VisualizationSample-ForWebApi/blob/master/ScreenShot.png)
 
