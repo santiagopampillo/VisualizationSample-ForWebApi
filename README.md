@@ -1,4 +1,4 @@
-# Visualization Sample for WebApi
+Visualization Sample for WebApi
 
 ### Description
 
