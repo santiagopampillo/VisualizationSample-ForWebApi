@@ -14,9 +14,18 @@ This sample makes use of the following NuGet Packages
 [MapSuite 10.0.0](https://www.nuget.org/packages?q=ThinkGeo)
 
 ### About the Code
+```csharp
+FilterStyle filterStyle = ((FeatureLayer)layerOverlay.Layers[0]).ZoomLevelSet.ZoomLevel01.CustomStyles[0] as FilterStyle;
+if (filterStyle != null)
+{
+    filterStyle.Conditions.Clear();
 
-Working...
-
+    // Create the filter expression based on the values from client side.
+    string expression = string.Format("{0}{1}{2}", filterExpressions[filterExpression].Item1, filterValue, filterExpressions[filterExpression].Item2);
+    FilterCondition filterCondition = new FilterCondition("Population", expression);
+    filterStyle.Conditions.Add(filterCondition);
+}
+```
 ### Getting Help
 
 [Map Suite WebAPI Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_web_for_webapi)
@@ -30,7 +39,9 @@ Working...
 ### Key APIs
 This example makes use of the following APIs:
 
-Working...
+- [ThinkGeo.MapSuite.Drawing.GeoCanvas](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.drawing.geocanvas)
+- [ThinkGeo.MapSuite.Layers.PrinterLayer](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.layers.printerlayer)
+- [ThinkGeo.MapSuite.WebApi.LayerOverlay](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.webapi.layeroverlay)
 
 ### About Map Suite
 Map Suite is a set of powerful development components and services for the .Net Framework.
